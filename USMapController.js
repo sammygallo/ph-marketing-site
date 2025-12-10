@@ -321,7 +321,7 @@ class USMapController {
 }
 
 // Initialize the controller when the script loads
-const usMapController = new USMapController();
+var usMapController = new USMapController();
 
 // Export for use in other contexts
 if (typeof module !== 'undefined' && module.exports) {

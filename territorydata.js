@@ -1,5 +1,5 @@
 // Territory data with scheduling links for Account Executive meetings and Platform Demos
-const territoryData = {
+var territoryData = {
   // Example territories - update with actual territory names and links
   "Northeast": {
     name: "Northeast Region",

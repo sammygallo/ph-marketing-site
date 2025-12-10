@@ -34,7 +34,7 @@ class USMapController {
     // Get territory data
     const territory = territoryData[territoryName];
 
-    if (!territory) {
+    if (!territory || !territory.repInfo) {
       console.error(`Territory data not found for: ${territoryName}`);
       return;
     }
@@ -109,9 +109,9 @@ class USMapController {
     const optionAE = menuContainer.querySelector('#option-ae');
     const optionDemo = menuContainer.querySelector('#option-demo');
 
-    // Set click handlers with territory-specific links
-    optionAE.onclick = () => this.openSchedulingLink(territory.scheduling_link_1, 'Account Executive');
-    optionDemo.onclick = () => this.openSchedulingLink(territory.scheduling_link_2, 'Platform Demo');
+    // Set click handlers with territory-specific links from repInfo
+    optionAE.onclick = () => this.openSchedulingLink(territory.repInfo.scheduling_link_1, 'Account Executive');
+    optionDemo.onclick = () => this.openSchedulingLink(territory.repInfo.scheduling_link_2, 'Platform Demo');
   }
 
   // Open scheduling link in new window/tab

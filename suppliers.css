@@ -1,0 +1,61 @@
+.state-select {
+    font-family: Avenir;
+    padding: 0.25rem;
+}
+
+.state-option {
+    background-color: white;
+    font-family: Avenir;
+}
+
+.state-option:hover {
+    background-color: gray;
+}
+
+.supplier-name {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 30px;
+    top: 0px;
+    width: 180px;
+    height: 240px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.supplier-info-center-card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.supplier-info-center-card {
+    max-width: 180px;
+    min-width: 180px;
+    max-height: 180px;
+    min-height: 180px;
+    margin: 5px;
+    padding: 30px;
+    box-shadow: 0 4px 19px 2px rgb(34 48 54 / 8%);
+    border-radius: 7px;
+    position: relative;
+    text-align: center;
+}
+
+.supplier-info-center-card img {
+    width:100%;
+}
+
+.supplier-info-center-card-learn-more {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    width: 100%;
+    color: #520079;
+    font-weight: 500;
+    text-align: center;
+}

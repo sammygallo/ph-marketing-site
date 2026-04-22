@@ -1,3 +1,26 @@
+<script>
+  // MOBILE NAVIGATION
+  function mobileSelect() {
+      var x = document.getElementById("mobileMenu").value;
+      document.getElementById(x).checked = true;
+    }
+    function overviewChecked() {
+      document.getElementById("overview").checked = true;
+    }
+
+    function trainingChecked() {
+      document.getElementById("training").checked = true;
+    }
+    function signupChecked() {
+      document.getElementById("signup").checked = true;
+    }
+    function faqsChecked() {
+      document.getElementById("faqs").checked = true;
+    }
+    function requestmoreinfoChecked() {
+      document.getElementById("requestmoreinfo").checked = true;
+    }
+</script>
 <div id="sic-content">
   <div class="mobile_menu">
     <select id="mobileMenu" onchange="mobileSelect()">
@@ -59,7 +82,7 @@
 
     <!-- THIS IS WHERE THE SIGNUP SECTION WAS !-->
 
-    <input name="tabs" type="radio" id="training" class="input" />
+    <input name="tabs" type="radio" id="training" class="input"/>
     <label for="training" class="tab-label">Training</label>
     <div class="panel">
       <p>
@@ -76,90 +99,97 @@
       minutes long.
       </p>
 
-      <div class="webinar-div-container" style="display:unset !important;">
+      <div class="webinar-div-container" id="webinar-div-container" style="display:unset !important;">
         <div class="webinar-div-2">
 
-          <h4 id="firstDate"></h4>
-          <span id="firstDateTimeSlot1" class="webinar_links" onclick="openTypeForm1()"></span>
-          <span id="firstDateTimeSlot2" class="webinar_links" onclick="openTypeForm2()"></span>
-          <span id="firstDateTimeSlot3" class="webinar_links" onclick="openTypeForm3()"></span>
-          <span id="firstDateTimeSlot4" class="webinar_links" onclick="openTypeForm4()"></span>
+          <div id="first-time-group">
+            <h4 id="firstDate"></h4>
+            <span id="firstDateTimeSlot1" class="webinar_links"></span>
+            <span id="firstDateTimeSlot2" class="webinar_links"></span>
+            <span id="firstDateTimeSlot3" class="webinar_links"></span>
+            <span id="firstDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <h4 id="secondDate"></h4>
+          <div id="second-time-group">
+            <h4 id="secondDate"></h4>
+            <span id="secondDateTimeSlot1" class="webinar_links"></span>
+            <span id="secondDateTimeSlot2" class="webinar_links"></span>
+            <span id="secondDateTimeSlot3" class="webinar_links"></span>
+            <span id="secondDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <span id="secondDateTimeSlot1" class="webinar_links" onclick="openTypeForm5()"></span>
-          <span id="secondDateTimeSlot2" class="webinar_links" onclick="openTypeForm6()"></span>
-          <span id="secondDateTimeSlot3" class="webinar_links" onclick="openTypeForm7()"></span>
-          <span id="secondDateTimeSlot4" class="webinar_links" onclick="openTypeForm8()"></span>
+          <div id="third-time-group">
+            <h4 id="thirdDate"></h4>
+            <span id="thirdDateTimeSlot1" class="webinar_links"></span>
+            <span id="thirdDateTimeSlot2" class="webinar_links"></span>
+            <span id="thirdDateTimeSlot3" class="webinar_links"></span>
+            <span id="thirdDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <h4 id="thirdDate"></h4>
+          <div id="fourth-time-group">
+            <h4 id="fourthDate"></h4>
+            <span id="fourthDateTimeSlot1" class="webinar_links"></span>
+            <span id="fourthDateTimeSlot2" class="webinar_links"></span>
+            <span id="fourthDateTimeSlot3" class="webinar_links"></span>
+            <span id="fourthDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <span id="thirdDateTimeSlot1" class="webinar_links" onclick="openTypeForm9()"></span>
-          <span id="thirdDateTimeSlot2" class="webinar_links" onclick="openTypeForm10()"></span>
-          <span id="thirdDateTimeSlot3" class="webinar_links" onclick="openTypeForm11()"></span>
-          <span id="thirdDateTimeSlot4" class="webinar_links" onclick="openTypeForm12()"></span>
+          <div id="fifth-time-group">
+            <h4 id="fifthDate"></h4>
+            <span id="fifthDateTimeSlot1" class="webinar_links"></span>
+            <span id="fifthDateTimeSlot2" class="webinar_links"></span>
+            <span id="fifthDateTimeSlot3" class="webinar_links"></span>
+            <span id="fifthDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <h4 id="fourthDate"></h4>
+          <div id="sixth-time-group">
+            <h4 id="sixthDate"></h4>
+            <span id="sixthDateTimeSlot1" class="webinar_links"></span>
+            <span id="sixthDateTimeSlot2" class="webinar_links"></span>
+            <span id="sixthDateTimeSlot3" class="webinar_links"></span>
+            <span id="sixthDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <span id="fourthDateTimeSlot1" class="webinar_links" onclick="openTypeForm13()"></span>
-          <span id="fourthDateTimeSlot2" class="webinar_links" onclick="openTypeForm14()"></span>
-          <span id="fourthDateTimeSlot3" class="webinar_links" onclick="openTypeForm15()"></span>
-          <span id="fourthDateTimeSlot4" class="webinar_links" onclick="openTypeForm16()"></span>
+          <div id="seventh-time-group">
+            <h4 id="seventhDate"></h4>
+            <span id="seventhDateTimeSlot1" class="webinar_links"></span>
+            <span id="seventhDateTimeSlot2" class="webinar_links"></span>
+            <span id="seventhDateTimeSlot3" class="webinar_links"></span>
+            <span id="seventhDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <h4 id="fifthDate"></h4>
+          <div id="eighth-time-group">
+            <h4 id="eighthDate"></h4>
+            <span id="eighthDateTimeSlot1" class="webinar_links"></span>
+            <span id="eighthDateTimeSlot2" class="webinar_links"></span>
+            <span id="eighthDateTimeSlot3" class="webinar_links"></span>
+            <span id="eighthDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <span id="fifthDateTimeSlot1" class="webinar_links" onclick="openTypeForm17()"></span>
-          <span id="fifthDateTimeSlot2" class="webinar_links" onclick="openTypeForm18()"></span>
-          <span id="fifthDateTimeSlot3" class="webinar_links" onclick="openTypeForm19()"></span>
-          <span id="fifthDateTimeSlot4" class="webinar_links" onclick="openTypeForm20()"></span>
+          <div id="ninth-time-group">
+            <h4 id="ninthDate"></h4>
+            <span id="ninthDateTimeSlot1" class="webinar_links"></span>
+            <span id="ninthDateTimeSlot2" class="webinar_links"></span>
+            <span id="ninthDateTimeSlot3" class="webinar_links"></span>
+            <span id="ninthDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
-          <h4 id="sixthDate"></h4>
-
-          <span id="sixthDateTimeSlot1" class="webinar_links" onclick="openTypeForm21()"></span>
-          <span id="sixthDateTimeSlot2" class="webinar_links" onclick="openTypeForm22()"></span>
-          <span id="sixthDateTimeSlot3" class="webinar_links" onclick="openTypeForm23()"></span>
-          <span id="sixthDateTimeSlot4" class="webinar_links" onclick="openTypeForm24()"></span>
-
-          <h4 id="seventhDate"></h4>
-
-          <span id="seventhDateTimeSlot1" class="webinar_links" onclick="openTypeForm25()"></span>
-          <span id="seventhDateTimeSlot2" class="webinar_links" onclick="openTypeForm26()"></span>
-          <span id="seventhDateTimeSlot3" class="webinar_links" onclick="openTypeForm27()"></span>
-          <span id="seventhDateTimeSlot4" class="webinar_links" onclick="openTypeForm28()"></span>
-
-          <h4 id="eighthDate"></h4>
-
-          <span id="eighthDateTimeSlot1" class="webinar_links" onclick="openTypeForm29()"></span>
-          <span id="eighthDateTimeSlot2" class="webinar_links" onclick="openTypeForm30()"></span>
-          <span id="eighthDateTimeSlot3" class="webinar_links" onclick="openTypeForm31()"></span>
-          <span id="eighthDateTimeSlot4" class="webinar_links" onclick="openTypeForm32()"></span>
-
-          <h4 id="ninthDate"></h4>
-
-          <span id="ninthDateTimeSlot1" class="webinar_links" onclick="openTypeForm33()"></span>
-          <span id="ninthDateTimeSlot2" class="webinar_links" onclick="openTypeForm34()"></span>
-          <span id="ninthDateTimeSlot3" class="webinar_links" onclick="openTypeForm35()"></span>
-          <span id="ninthDateTimeSlot4" class="webinar_links" onclick="openTypeForm36()"></span>
-
-          <h4 id="tenthDate"></h4>
-
-          <span id="tenthDateTimeSlot1" class="webinar_links" onclick="openTypeForm37()"></span>
-          <span id="tenthDateTimeSlot2" class="webinar_links" onclick="openTypeForm38()"></span>
-          <span id="tenthDateTimeSlot3" class="webinar_links" onclick="openTypeForm39()"></span>
-          <span id="tenthDateTimeSlot4" class="webinar_links" onclick="openTypeForm40()"></span>
+          <div id="tenth-time-group">
+            <h4 id="tenthDate"></h4>
+            <span id="tenthDateTimeSlot1" class="webinar_links"></span>
+            <span id="tenthDateTimeSlot2" class="webinar_links"></span>
+            <span id="tenthDateTimeSlot3" class="webinar_links"></span>
+            <span id="tenthDateTimeSlot4" class="webinar_links"></span>
+          </div>
 
         </div>
+
       </div>
 
-      <a class="typeform-share link" href="https://parachutehealthdme.typeform.com/to/p6pOtz?request_type=demo video"
-        data-mode="popup" style="color:#5c257e;text-decoration:none;font-size:16x;font-weight:500;"
-        data-hide-headers="true" data-hide-footer="true" data-submit-close-delay="2" target="_blank">Click here</a>
-      <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
-      to request a demo video of how Parachute Health works.
-      </p>
       <p>
         We look forward to seeing you!
       </p>
+
     </div>
 
     <input name="tabs" type="radio" id="faqs" class="input" />
